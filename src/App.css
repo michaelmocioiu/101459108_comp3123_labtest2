@@ -1,38 +1,84 @@
-.App {
+html {
+  background-color: #333 ;
+}
+
+.app {
   text-align: center;
+  margin: 50px auto;
+  max-width: 400px;
+  font-family: 'Arial', sans-serif;
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #333;
+  color: #f1f1f1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Input Field (Dark Theme) */
+.input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #555;
+  background-color: #444;
+  color: #f1f1f1;
+  margin-right: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input::placeholder {
+  color: #bbb;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* Button (Dark Theme) */
+.button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #ff5722;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.button:hover {
+  background-color: #e64a19;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Error Message */
+.error {
+  color: #ff5252;
+  margin-top: 10px;
+}
+
+/* Weather Card Styling for Dark Theme */
+.weather-card {
+  text-align: center;
+  border: 1px solid #555;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 300px;
+  background-color: #444;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  color: #f1f1f1;
+}
+
+.weather-card h2 {
+  margin-bottom: 10px;
+}
+
+.weather-card img {
+  width: 100px;
+  height: 100px;
+}
+
+.weather-card p {
+  margin: 5px 0;
+  color: #ddd;
+}
+
+.weather-card .temperature {
+  font-size: 2rem;
+  color: #ff5722;
 }
